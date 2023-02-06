@@ -3,7 +3,8 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './Home';
-import Tommo from './Tommo';
+import Sidebar from './Sidebar';
+import Tourdates from './Tourdates';
 
 
 
@@ -16,7 +17,13 @@ const Stack = createNativeStackNavigator();
         component={Home} 
         options={{headerShown: false}} />
         <Stack.Screen name='Tommo'
-        component={Tommo} />
+        component={Sidebar}
+        options={{headerShown: false}}/>
+        <Stack.Screen
+          name="tourdates"
+          component={Tourdates}
+          options={{ headerShown: false }}
+        />
     </Stack.Navigator>
 </NavigationContainer>
     )

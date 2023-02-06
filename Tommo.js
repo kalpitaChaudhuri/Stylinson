@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet, Image } from 'react-native'
 import React from 'react'
+import { IconButton } from 'react-native-paper';
 
 export default function Tommo({ navigation }) {
   return (
@@ -27,13 +28,6 @@ export default function Tommo({ navigation }) {
   )
 }
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-
   Timage: {
     position: 'absolute',
     justifyContent: 'center',
