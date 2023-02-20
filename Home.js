@@ -25,7 +25,7 @@ export default function Home({ navigation }) {
        </ImageBackground>
       <View style={styles.button1}>
       <Button color='#1D98BC' title='Tommo'
-      onPress={() => navigation.navigate("Tommo")}
+      onPress={() => navigation.navigate("Sidebar")}
       />
       </View>
       <View style={styles.button2}>
