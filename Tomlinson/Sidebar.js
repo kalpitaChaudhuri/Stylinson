@@ -10,7 +10,7 @@ import CustomDrawer from './CustomDrawer';
 export default function Sidebar() {
    const Drawer = createDrawerNavigator();
     return (
-    <Drawer.Navigator drawerContent={this.props.first => <CustomDrawer {...this.props.first} />} screenOptions={{ headerShown: true }}>
+    <Drawer.Navigator drawerContent={(props) => <CustomDrawer {...props} />} screenOptions={{ headerShown: true }}>
         <Drawer.Screen name="Tommo" component={Tommo} />
         <Drawer.Screen name="Career" component={Career} />
         <Drawer.Screen name="Tourdates" component={Tourdates} />
